@@ -1,0 +1,358 @@
+* {
+    margin: 0; /*quita todos los margenes de la pagina*/
+    border: 0;
+  }
+
+  html{
+    font-size: 10px; /*fuente predeterminada del html*/
+  }
+  
+
+  /* Hader: navbar*/
+  .header { /*se estiliza el contenedor de la nav*/
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    background-color: #30343F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+  }
+  .logo{
+    margin-left: 11rem;
+  }
+  
+  .nav ul {
+    margin: 0 11rem 0 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav ul li a {
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: #FFFFFF;
+  }
+  
+  .nav ul li a:hover {
+    cursor: pointer;
+  }
+  /*Banner*/
+  .section1 { /*se estiliza contenedor del banner*/
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .section1::before{ /*se agrega psudoelemento para que el blur no se aplique al texto sobre la imagen*/
+    content: "";
+    position: absolute; top: 0;left: 0;right: 0; bottom: 0;
+    background-image: url(file:///C:/Users/bonfa/Desktop/Funko%20Pop/multimedia/funkos-banner.webp);
+    filter: blur(3px);
+    background-size: cover;
+    overflow: hidden;
+    background-position: bottom;
+  }
+
+  .text{
+    position: relative;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-left: 11rem;
+  }
+
+  .text h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    
+  }
+
+  .text p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .text .shop {
+    background-color: #FFFFFF; /* Fondo blanco del boton */
+    color: black; /*Texto color negro*/
+    font-family: 'inter'; /*fuente de texto del botón*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem; 
+    border: none; /* Sin borde */
+    border-radius: 5rem; /* Borde redondeado 50px */
+    padding: 1rem; /* Espacio interno */
+    width: 21.1rem; /*ancho del boton*/
+    margin-top: 4rem; /*margen arriba*/
+    height: 4.7rem; /*altura de botón*/
+    left: 11rem; /*margen izquierdo*/
+  }
+  .text .shop:hover { /*pseudoclase para cambiar cursor*/
+    cursor: pointer;
+  }
+
+  .section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 11rem 0 11rem;
+  }
+  .section2 div {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 4rem;
+  }
+  .section2 div h2{
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 500;
+  }
+   
+  .section2 div p{
+    font-size: 2.4rem;
+    line-height: 0.2rem;
+    margin-top: 3rem;
+  }
+  .section2 div .p{
+    width: 67rem;
+    padding-bottom: 4rem;
+    border-bottom: 3px solid #FF3333;
+  }
+  
+  .section2 input{
+    background-color:#30343F;
+    width: 29.181rem;
+    height: 6.5rem;
+    color: #FFFFFF;
+    border: 1px solid #30343F;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin-top: 4rem;
+    }
+  
+  .section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 11rem 0 11rem;
+    
+  }
+  .section3 div {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 4rem;
+  }
+ 
+  .section3 div h2{
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 500;
+  }
+   
+  .section3 div p{
+    font-size: 2.4rem;
+    line-height: 0.5rem;
+    margin-top: 3rem;
+  }
+  .section3 div .p{
+    width: 67rem;
+    padding-bottom: 4rem;
+    border-bottom: 3px solid #FF3333;
+  }
+
+  .section3 input{
+    background-color:#30343F;
+    width: 29.181rem;
+    height: 6.5rem;
+    color: #FFFFFF;
+    border: 1px solid #30343F;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    margin-top: 4rem;
+    }
+
+  .section4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 11rem 0 11rem; 
+  }
+  .section4 div {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 4rem;
+  }
+  .section4 div h2{
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 500;
+  }
+   
+  .section4 div p{
+    font-size: 2.4rem;
+    line-height: 0.5rem;
+    margin-top: 3rem;
+    
+  }
+  .section4 div .p{
+    width: 67rem;
+    padding-bottom: 4rem;
+    border-bottom: 3px solid #FF3333;
+  }
+
+  .section4 input{
+    background-color:#30343F;
+    width: 29.181rem;
+    height: 6.5rem;
+    color: #FFFFFF;
+    border: 1px solid #30343F;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin-top: 4rem;
+    }
+
+  .titulo-section5{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-left: 11rem;
+    }
+
+  .section5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 0 5rem 0 5rem;
+  }
+  .section5 div {
+    position: relative;
+  }
+
+  .section5 div .red-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF3333;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .section5 div img{
+    width: 35.997rem;
+    height: 35.2rem;
+  }
+
+  .section5 h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    color: #333333;
+    
+  }
+  .section5 .p1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #111111;
+   
+  }
+  .section5 .p2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  color: #333333;
+  
+  }
+  .section5 .p3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    color: #1D84B5;
+    padding-bottom: 7rem;
+  }
+
+  .footer{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #30343F;
+    height: 35rem;
+    width: 100%;
+    box-sizing: border-box;
+    
+  }
+
+  .footer div ul{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+    list-style: none;
+    margin-left: 10rem;
+  }
+  .footer .p{
+    display: flex;
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .footer figure img{
+    margin-right: 10rem;
+    height: 15rem;
+  }
+
+
+
+
+  
+
+
+
