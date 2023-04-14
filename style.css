@@ -10,8 +10,8 @@
   }
  
   body{ /* se pone grid en el body para estructurar*/
-    background-color: pink;
-    max-width: 1440px; 
+    background-image: url(https://cdn.pixabay.com/photo/2023/03/12/15/45/flowers-7847210_1280.png);
+    max-width: 1540px; 
     margin:auto;
     min-width: 100vh;
     display: grid;
@@ -142,6 +142,7 @@
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     
   }
   .section2 div {
@@ -153,6 +154,7 @@
     text-transform: uppercase;
     color: #111111;
     font-weight: 500;
+    margin: 0;
   }
    
   .section2 div p{
@@ -187,6 +189,7 @@
     grid-area: secion3;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .section3 div {
@@ -199,6 +202,7 @@
     text-transform: uppercase;
     color: #111111;
     font-weight: 500;
+    margin: 0;
   }
    
   .section3 div p{
@@ -232,16 +236,19 @@
     grid-area: section4;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .section4 div {
     font-family: 'Raleway';
     font-style: normal;
     font-size: 4rem;
+    
   }
   .section4 div h2{
     text-transform: uppercase;
     color: #111111;
     font-weight: 500;
+    margin: 0;
   }
    
   .section4 div p{
@@ -272,20 +279,15 @@
     margin-top: 4rem;
     }
 
-    div{
-      background-color: white;
-      margin: 0;
-    }
-
-    div .titulo-sec5{
-      
+    .titulo{
       font-family: 'Raleway';
-      font-style: normal;
+      text-transform: uppercase;
       font-weight: 700;
-      font-size: 46px;
-      line-height: 54px;
-      margin:0 0 0 5rem;
-      padding-bottom: 5rem;
+      font-size: 4rem;
+      line-height: 5.4rem;
+      margin: 0;
+      padding: 0 0 5rem 5rem;
+      background-color: white;
     }
 
   .section5{
@@ -363,8 +365,7 @@
     background-color: #30343F;
     height: 35rem;
     width: 100%;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
   }
 
   .footer div ul{
@@ -377,6 +378,7 @@
     list-style: none;
     margin-left: 10rem;
   }
+
   .footer .p{
     display: flex;
     font-family: 'Raleway';
