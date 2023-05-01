@@ -26,7 +26,7 @@
 
     --dark-bg-solid: #30343f;
     --light-bg-solid: #fafaff;
-    --ligt-font-solid: #ffff;
+    --light-font-solid: #ffff;
 
     /*Typhography*/
     --base-font: 'Inter', sans-serif;
@@ -62,9 +62,8 @@
   a{
     text-decoration: none;
     font-family: inherit;
-    color: inherit;
+    color: var(--light-font-solid);
   }
-
 
   li{
     list-style-type: none;
@@ -96,7 +95,6 @@
     align-items: center;
    }
    
-  
   .navbar__menu {
     display: flex;
     align-items: center;
@@ -147,279 +145,108 @@
     background-color: var(--primary-900);
   }
 
-
-  /*.nav ul li a {
-    padding: 1rem;
-    font-weight: 500;
-  }
-  
-  
-  /*Banner
-  .banner { /*se estiliza contenedor del banner
-    grid-area: banner;
+  /* Banner (hero)*/
+  .banner { /*se estiliza contenedor del banner*/
+    padding: var(--spacing-128);
     position: relative;
-    width: 100%;
-  }
-
-  .banner::before{ /*se agrega psudoelemento para que el blur no se aplique al texto sobre la imagen
-    content: "";
-    position: absolute; top: 0;left: 0;right: 0; bottom: 0;
     background-image: url(file:///C:/Users/bonfa/Desktop/Funko%20Pop/img/funkos-banner.webp);
-    filter: blur(3px);
     background-size: cover;
-    overflow: hidden;
     background-position: bottom;
   }
 
-  .text{
+  .banner::before{ /*se agrega psudoelemento para que el blur no se aplique al texto sobre la imagen*/
+    content: "";
+    position: absolute; top: 0;left: 0;right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(3px) brightness(.9);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .banner__content{
     position: relative;
-    color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    margin-left: 11rem;
-    justify-content: center;
+    gap: var(--spacing-20);
+    align-items: start;
   }
 
-  .text h3 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4.5rem;
-    margin-bottom: 0;
+  .banner-title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    color: var(--light-font-solid);
   }
 
-  .text p {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
+  .banner-text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    color: var(--light-font-solid);
   }
 
-  .text .shop {
-    background-color: #FFFFFF; /* Fondo blanco del boton
-    color: black; /*Texto color negro
-    font-family: 'inter'; /*fuente de texto del botón
-    font-style: normal;
+  .banner-link{
+    font-size: var(--font-medium);
+    background-color: var(--light-bg-solid);
+    color: var(--dark-solid);
+    padding: var(--spacing-14) var(--spacing-68);
+    border-radius: 50px;
     font-weight: 500;
-    font-size: 2rem;
-    line-height: 2.4rem; 
-    border: none; /* Sin borde 
-    margin: 0;
-    border-radius: 5rem; /* Borde redondeado 50px 
-    padding: 1rem; /* Espacio interno 
-    width: 21.1rem; /*ancho del boton
-    margin-top: 2rem; /*margen arriba
-    height: 4.7rem; /*altura de botón
-    left: 11rem; /*margen izquierdo
+    transition: all .3s ease-in-out;
   }
 
-  .text .shop:hover { /*pseudoclase para cambiar cursor
-    cursor: pointer;
+  .banner-link:hover{
+    background-color: var(--primary-900);
+    color: var(--light-font-solid);
   }
-
-  .star-wars {
-    grid-area: star-wars;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-  }
-
-  .star-wars article {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 4rem;
-  }
-  .star-wars article h3{
-    text-transform: uppercase;
-    color: #111111;
-    font-weight: 500;
-    margin: 0;
-  }
-   
-  .star-wars article p{
-    font-size: 2.4rem;
-    line-height: 0.2rem;
-    margin-top: 3rem;
-    padding-bottom: 4rem;
-    border-bottom: 3px solid #FF3333;
-  }
-  
-  
-  .star-wars a{
-    background-color:#30343F;
-    width: 29.181rem;
-    height: 6.5rem;
-    color: #FFFFFF;
-    border: 1px solid #30343F;
-    padding: 1rem;
-    border-radius: 5rem;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-    margin-top: 4rem;
-    }
-  
-  .pokemon {
-    grid-area: secion3;
-    display: flex;
-    justify-content: center;
+  /*COLLECTIONS*/
+  .collection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
-  .pokemon article {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 4rem;
-  }
- 
-  .pokemon article h3{
-    text-transform: uppercase;
-    color: #111111;
-    font-weight: 500;
-    margin: 0;
-  }
-   
-  .pokemon article p{
-    font-size: 2.4rem;
-    line-height: 0.5rem;
-    margin-top: 3rem;
-    padding-bottom: 4rem;
-    border-bottom: 3px solid #FF3333;
+  .collection:nth-child(2) .collection__cover{
+    order:-1;
   }
 
-  .pokemon a{
-    background-color:#30343F;
-    width: 29.181rem;
-    height: 6.5rem;
-    color: #FFFFFF;
-    border: 1px solid #30343F;
-    padding: 1rem;
-    border-radius: 5rem;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.4rem;
-    margin-top: 4rem;
-    }
-
-  .harry-potter {
-    grid-area: harry-potter;
+  .collection__content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    align-items: start;
   }
-  .harry-potter article {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-size: 4rem;
-  }
-  .harry-potter article h3{
-    text-transform: uppercase;
-    color: #111111;
+
+  .collection__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
     font-weight: 500;
-    margin: 0;
-  }
-   
-  .harry-potter article p{
-    font-size: 2.4rem;
-    line-height: 0.5rem;
-    margin-top: 3rem;
-    padding-bottom: 4rem;
-    border-bottom: 3px solid #FF3333;
   }
 
-  .harry-potter a{
-    background-color:#30343F;
-    width: 29.181rem;
-    height: 6.5rem;
-    color: #FFFFFF;
-    border: 1px solid #30343F;
-    padding: 1rem;
-    border-radius: 5rem;
-    font-family: 'Inter';
-    font-style: normal;
+  .collection__text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spacing-20);
+  }
+  
+  .collection__link{
+    display: inline-block;
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
     font-weight: 500;
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-    margin-top: 4rem;
-    }
-
-    .titulo{
-      font-family: 'Raleway';
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 4rem;
-    }
-
-  .cards{
-    grid-area: cards;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-  }
-  .cards div {
-    position: relative;
+    transition: background .3s ease-in-out;
   }
 
-  .cards div .red-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #FF3333;
-    border: none;
-    color: white;
-    padding: 0.5rem 2rem;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+  .collection__link:hover{
+    background-color: var(--primary-900);
   }
-  .cards div img{
-    width: 35.997rem;
-    height: 35.2rem;
-  }
+  
 
-  .cards h3{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.7rem;
-    line-height: 4rem;
-    color: #333333;
-    margin: 0;
-  }
-  .cards .p1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 4rem;
-    color: #111111;
-    margin: 0;
-  }
-  .cards .p2{
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 4rem;
-  color: #333333;
-  margin: 0;
-  }
-  .cards .p3{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 4rem;
-    color: #1D84B5;
-    margin: 0;
-    padding-bottom: 10rem;
-  }
 
-  .footer{ 
+  /*.footer{ 
     grid-area: footer;
     display: flex;
     flex-direction: row;
