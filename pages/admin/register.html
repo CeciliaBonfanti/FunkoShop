@@ -4,60 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-    <link rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <header class="header">
-        <figure class="logo">
-            <img src="file:///C:/Users/bonfa/Desktop/Funko%20Pop/multimedia/branding/logo_light_horizontal.svg"alt="logo de la marca"> 
-        </figure>
-        <nav class="nav"> 
-            <ul>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">CONTACTO</a></li>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#"><img src="file:///C:/Users/bonfa/Desktop/Funko%20Pop/multimedia/icons/cart-icon.svg" alt="cart-icon"></a></li>
-            </ul>
+    <header>
+        <nav class="navbar container"> 
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg"alt="logo de la marca">
+                </a>
+            </picture>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../../index.html">SALIR</a>
+              </li>   
         </nav>
-</header>
-<section>
-    <div>
-        <h1>crea tu cuenta</h1>
-        <p>Completa el formulario para ser parte del mundo de los Funkos</p>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre">
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido">
-        <label for="email">Email:</label>
-        <input type="email" name="" id="email">
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña">
-        <label for="repeat">Repita Contraseña:</label>
-        <input type="password" id="repeat">
-        <button>Registrar</button>
-        <input type="checkbox" id="acepto">
-        <label for="acepto">acepto</label>
-        <a>Terminos y Condiciones</a>
+    </header>
 
-    </div>
-</section>
+    <main class=" register-main container">
+        <section class="register-main_section">
+            <div>
+                <h1>crea tu cuenta</h1>
+                <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+                <div class="register-input-container">
+                    <label class= "register-main_section_label" for="nombre">Nombre:</label>
+                    <input class= "register-main_section_input" type="text" id="nombre" placeholder="John">
+                </div>
+                <div class="register-input-container">
+                    <label class= "register-main_section_label" for="apellido">Apellido:</label>
+                    <input class= "register-main_section_input" type="text" id="apellido" placeholder="Doe">
+                </div>
+                <div class="register-input-container">
+                    <label class= "register-main_section_label" for="email">Email:</label>
+                    <input class= "register-main_section_input" type="email" name="" id="email" placeholder="johndoe@correo.com">
+                </div>
+                <div class="register-input-container">
+                    <label class= "register-main_section_label" for="contraseña">Contraseña:</label>
+                    <input class= "register-main_section_input" type="password" id="contraseña" placeholder="● ● ● ● ● ● ● ● ● ●">
+                </div>
+                <div class="register-input-container">
+                    <label class= "register-main_section_label" for="repeat">Repita Contraseña:</label>
+                    <input class= "register-main_section_input" type="password" id="repeat" placeholder="● ● ● ● ● ● ● ● ● ●">
+                </div>
+                <div class="register-button-container">
+                    <a class="register_button_link" href="">Registrar</a>
+                    <div>
+                        <input type="checkbox" id="acepto">
+                        <label for="acepto">Acepto</label>
+                    </div>
+                    <a class="register_button_link_a" href="">Terminos y Condiciones</a>
+                    
+                </div>
+                
+        
+            </div>
+        </section>
+    </main>
+
+
 <footer class="footer">
-    <div>
-        <ul>
-        <li>SHOP</li>
-        <li>REGISTRARSE</li>
-        <li>INGRESAR</li>
-        <li>CONTACTO</li>
-    </ul>
-</div>
-<div class="p"><p>All rights reserver 2022 - Funko Shop & Copy;</p></div>
-    <figure>
-        <img src="file:///C:/Users/bonfa/Desktop/Funko%20Pop/multimedia/branding/isotype.svg">
-    </figure>
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item">
+                <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+            </li class="navbar__item">
+            <li>
+                <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+            </li>
+        </ul>
+        <picture>
+            <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca FuncoShop">
+        </picture>
+    </nav>
+<p class="footer__copy">All rights reserver 2023 - Funko Shop & Copy;</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script><!--se agrega script para icono chevron de libreria iconify-->
 </body>
 </html>

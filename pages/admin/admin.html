@@ -4,39 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
+    <title>Admin</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-    <link rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    
 </head>
 <body>
-    <header class="header">
-        <figure class="logo">
-            <img src="file:///C:/Users/bonfa/Desktop/Funko%20Pop/multimedia/branding/logo_light_horizontal.svg"alt="logo de la marca"> 
-        </figure>
-        <nav class="nav"> 
-            <ul>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">CONTACTO</a></li>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#"><img src="file:///C:/Users/bonfa/Desktop/Funko%20Pop/multimedia/icons/cart-icon.svg" alt="cart-icon"></a></li>
-            </ul>
+    <header>
+        <nav class="navbar container-admin"> 
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg"alt="logo de la marca">
+                </a>
+            </picture>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../../index.html">SALIR</a>
+              </li>       
         </nav>
-</header>
+    </header>
+<main class="container-admin">
+    <section class="admin-main_section1">
+        <label for="busqueda">
+        <img src="../../img/icons/search_icon.svg" alt="Buscar">
+        </label>
+        <input class="admin-section1_input" type="search" id="busqueda" name="busqueda" oninput="buscar(this.value)" placeholder=" código, nombre o categoría">
+    </section>
+    <section class="admin-main_section2">
+        <h1>LISTADO DE PRODUCTOS</h1>
+        <div>
+            AGREGAR
+            <a href="">+</a>
+        </div>
+    </section>
+    <section class="admin-main_grid-container">
+        <p class="grid-item">ID</p>
+        <p>Código</p>
+        <p>Nombre del producto</p>
+        <p>Categoría</p>
+        <p></p>
+        <!-- Producto 1 -->
+        <p class="grid-item">1</p>
+        <p>STW001001</p>
+        <p>Baby Yoda Blueball</p>
+        <p>STAR WARS</p>
+        <figure class="grid-item">
+          <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+          <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+        </figure>
+         <!-- Producto 2 -->
+         <p class="grid-item">2</p>
+         <p>STW001002</p>
+         <p>Boba Fett Fighter</p>
+         <p>STAR WARS</p>
+         <figure class="grid-item">
+           <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+           <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+         </figure>
+           <!-- Producto 3 -->
+        <p class="grid-item">3</p>
+        <p>STW001003</p>
+        <p>Luke Skylwalker & Grogu</p>
+        <p>STAR WARS</p>
+        <figure class="grid-item">
+          <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+          <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+        </figure>
+          <!-- Producto 4 -->
+          <p class="grid-item">4</p>
+          <p>STW001004</p>
+          <p>Stormtrooper Lightsaber</p>
+          <p>STAR WARS</p>
+          <figure class="grid-item">
+            <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+            <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+          </figure>
+            <!-- Producto 5 -->
+        <p class="grid-item">5</p>
+        <p>PKM001001</p>
+        <p>Charmander Smiley</p>
+        <p>POKEMON</p>
+        <figure class="grid-item">
+          <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+          <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+        </figure>
+          <!-- Producto 6 -->
+          <p class="grid-item">6</p>
+          <p>PKM001002</p>
+          <p>Dragonite Hi!</p>
+          <p>POKEMON</p>
+          <figure class="grid-item">
+            <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+            <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+          </figure class="grid-item">
+            <!-- Producto 7 -->
+        <p class="grid-item">7</p>
+        <p>PKM001003</p>
+        <p>Pidgeotto Flying</p>
+        <p>POKEMON</p>
+        <figure class="grid-item">
+          <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+          <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+        </figure>
+          <!-- Producto 8 -->
+          <p class="grid-item">8</p>
+          <p>PKM001004</p>
+          <p>Pikachu Smiley</p>
+          <p>POKEMON</p>
+          <figure class="grid-item">
+            <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+            <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+          </figure>
+            <!-- Producto 9 -->
+        <p class="grid-item">9</p>
+        <p>PKM001005</p>
+        <p>Vulpix Fancy</p>
+        <p>POKEMON</p>
+        <figure class="grid-item">
+          <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+          <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+        </figure>
+          <!-- Producto 10 -->
+          <p class="grid-item">10</p>
+          <p>HPT001001</p>
+          <p>Harry Potter & Hegwid</p>
+          <p>HARRY POTTER</p>
+          <figure class="grid-item">
+            <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+            <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+          </figure>
+            <!-- Producto 11 -->
+        <p class="grid-item">11</p>
+        <p>HPT001002</p>
+        <p>Hermione Ball Dress</p>
+        <p>HARRY POTTER</p>
+        <figure class="grid-item">
+          <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+          <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+        </figure>
+          <!-- Producto 12 -->
+          <p class="grid-item">12</p>
+          <p>HPT001003</p>
+          <p>Luna Lovegood Lion Mask</p>
+          <p>HARRY POTTER</p>
+          <figure class="grid-item">
+            <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+            <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+          </figure>
+            <!-- Producto 13 -->
+        <p class="grid-item">13</p>
+        <p>HPT001004</p>
+        <p>Snape Patronus</p>
+        <p>HARRY POTTER</p>
+        <figure class="grid-item">
+          <img src="../../img/icons/edit_pencil.svg" alt="Editar">
+          <img src="../../img/icons/delete_trash.svg" alt="Borrar">
+        </figure>
+      </section>
+</main>
 <footer class="footer">
-    <div>
-        <ul>
-        <li>SHOP</li>
-        <li>REGISTRARSE</li>
-        <li>INGRESAR</li>
-        <li>CONTACTO</li>
-    </ul>
-</div>
-<div class="p"><p>All rights reserver 2022 - Funko Shop & Copy;</p></div>
-    <figure>
-        <img src="file:///C:/Users/bonfa/Desktop/Funko%20Pop/multimedia/branding/isotype.svg">
-    </figure>
+    <nav class="navbar container">
+        <ul class="navbar__item">
+            <li class="navbar__item">
+                <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+            </li class="navbar__item">
+            <li>
+                <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+            </li>
+        </ul>
+        <picture>
+            <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca FuncoShop">
+        </picture>
+    </nav>
+<p class="footer__copy">All rights reserver 2023 - Funko Shop & Copy;</p>
 </footer>
 </body>
 </html>
